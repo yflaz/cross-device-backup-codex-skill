@@ -6,8 +6,8 @@ Use this reference only for enablement, scheduling, handoff, restore, or disable
 
 Keep machine-specific configuration outside the skill and outside project repositories. Suggested location:
 
-- macOS/Linux: `~/.config/cross-device-backup/<slug>.json`
-- Windows: `%LOCALAPPDATA%\CrossDeviceBackup\<slug>.json`
+- macOS/Linux: `~/.config/codex-relay/<slug>.json`
+- Windows: `%LOCALAPPDATA%\CodexRelay\<slug>.json`
 
 Example:
 
@@ -37,7 +37,7 @@ Separate device paths prevent one computer from silently overwriting another com
 
 Run `scripts/backup_project.py --config <absolute-config-path>` every 5–10 minutes.
 
-- macOS: create a user LaunchAgent with `StartInterval`; use absolute paths for Python, the script, and config. Set stdout/stderr log paths under `~/Library/Logs/CrossDeviceBackup/`.
+- macOS: create a user LaunchAgent with `StartInterval`; use absolute paths for Python, the script, and config. Set stdout/stderr log paths under `~/Library/Logs/CodexRelay/`.
 - Windows: create a per-user Task Scheduler task running `python.exe` or `py.exe` with the script and config arguments. Set it to run whether or not Codex is open, prevent overlapping instances, and retry after failure.
 
 Do not schedule imports. Import only during an intentional device handoff, because importing changes local Codex session files.

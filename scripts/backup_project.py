@@ -178,5 +178,5 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except Exception as exc:
-        print(f"cross-device-backup: {exc}", file=sys.stderr)
+        print(f"codex-relay: {exc}", file=sys.stderr)
         raise SystemExit(1)

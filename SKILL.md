@@ -1,9 +1,9 @@
 ---
-name: cross-device-backup
+name: codex-relay
 description: Configure and operate opt-in, cross-device backups for one explicitly named Codex project, including resumable local sessions, durable context files, and non-invasive Git snapshots. Use only when the user explicitly invokes this skill or clearly says that the current project needs cross-device backup; never apply it to unrelated projects or chats.
 ---
 
-# Cross-device Backup
+# Codex Relay
 
 Protect only the project the user explicitly opts in. Do not scan, register, export, stop, restart, or modify other Codex projects or tasks.
 
