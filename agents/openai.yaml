@@ -1,0 +1,6 @@
+interface:
+  display_name: "Cross-device Backup"
+  short_description: "Opt-in Codex project and conversation backup across devices"
+  default_prompt: "Use $cross-device-backup to enable cross-device backup for this project."
+policy:
+  allow_implicit_invocation: false
